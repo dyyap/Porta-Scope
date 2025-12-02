@@ -24,7 +24,6 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import sys
 import binascii
-from untitled0 import *
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 from ttkbootstrap import utility
@@ -90,7 +89,7 @@ class FileSearchEngine(ttk.Frame):
         make_btn = ttk.Button(
             master=path_row,
             text="Make",
-            command=self.Make,
+            command=self.Make_Graph,
             width=8
         )
         make_btn.pack(side=LEFT, padx=5)
@@ -120,7 +119,7 @@ class FileSearchEngine(ttk.Frame):
         if path:
             self.path_var.set(path)
 
-    def Make(self):
+    def Make_Graph(self):
         a = ""
         teststring = []
 
