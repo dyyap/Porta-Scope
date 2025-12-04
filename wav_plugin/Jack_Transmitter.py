@@ -25,7 +25,7 @@ class AudioSender:
         self.client.set_shutdown_callback(self.shutdown)
 
     def process_audio(self, frames):
-        """Generate and send audio data"""
+        """Generate and send audio data This is where we plug data"""
         # Generate sine wave
         samples = np.arange(frames) + self.phase
         audio_data = self.amplitude * np.sin(2 * np.pi * self.frequency * samples / self.sample_rate)
