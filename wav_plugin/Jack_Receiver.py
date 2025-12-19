@@ -97,9 +97,9 @@ if __name__ == "__main__":
     ax1 = fig.add_subplot(1, 1, 1)
     interval = 1000
 
-    thread1 = threading.Thread(target=animation.FuncAnimation, args=(fig, animate,interval ), daemon=True)
-    plt.show()
-    thread1.start()
+    #thread1 = threading.Thread(target=animation.FuncAnimation, args=(fig, animate,interval ), daemon=True)
+    #plt.show()
+    #thread1.start()
 
 
     receiver = AudioReceiver()
